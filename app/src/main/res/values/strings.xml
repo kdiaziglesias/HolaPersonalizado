@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HolaPersonalizado</string>
+    <string name="adios">Adios</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hola</string>
+    <string name="darnombre">Su Nombre:</string>
+    <string name="saludo">Saludo:</string>
+    <string name="saludoSr">Sr</string>
+    <string name="saludoSra">Sra</string>
+    <string name="showTime">Calendario</string>
+    <string name="msg">Error</string>
+    <string name="title_activity_salutation">Salutation</string>
+    <string name="bhola2">Hola2</string>
+    <string name="badios">Adios</string>
+
+</resources>

@@ -54,7 +54,7 @@ public class Hola extends Activity {
 //defino el listener onClick
         miboton.setOnClickListener(new View.OnClickListener() {
             @Override
-            private Spinner spinhola;
+            //private Spinner spinhola;
             public void onClick(View v) {
                 //Llamo  la clase
                // MiClase persona1 = new MiClase("Jose",23);
@@ -135,7 +135,7 @@ public class Hola extends Activity {
                 startActivityForResult(intent,1);
 
 
-                Spinner spin = (Spinner)findViewById(R.id.spinhola);
+               /* Spinner spin = (Spinner)findViewById(R.id.spinhola);
                 final  String [] datos = new String[]{"Hola","Adios","Saludos"};
                 ArrayAdapter<String> adstirng = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,datos);
                 ArrayAdapter<CharSequence> adsaludo = ArrayAdapter.createFromResource(this,R.array.LLamada,android.R.layout.simple_spinner_item);
@@ -146,7 +146,7 @@ public class Hola extends Activity {
                 spinhola = (Spinner)findViewById(R.id.spinhola);
                 adsaludo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-                spinhola.setAdapter(adsaludo);
+                spinhola.setAdapter(adsaludo);*/
 
 
             }

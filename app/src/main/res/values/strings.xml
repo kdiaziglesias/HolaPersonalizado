@@ -15,4 +15,14 @@
     <string name="bhola2">Hola2</string>
     <string name="badios">Adios</string>
 
+    <string-array name="LLamada">
+
+        <item>Hola</item>
+        <item>Adios</item>
+        <item>Saludos</item>
+
+
+
+    </string-array>
+
 </resources>

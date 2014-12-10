@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -14,6 +15,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -52,6 +54,7 @@ public class Hola extends Activity {
 //defino el listener onClick
         miboton.setOnClickListener(new View.OnClickListener() {
             @Override
+            private Spinner spinhola;
             public void onClick(View v) {
                 //Llamo  la clase
                // MiClase persona1 = new MiClase("Jose",23);
@@ -130,6 +133,20 @@ public class Hola extends Activity {
                 Intent intent = new Intent(Hola.this,Salutation.class);
                 intent.putExtra("salutation",salutation);
                 startActivityForResult(intent,1);
+
+
+                Spinner spin = (Spinner)findViewById(R.id.spinhola);
+                final  String [] datos = new String[]{"Hola","Adios","Saludos"};
+                ArrayAdapter<String> adstirng = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,datos);
+                ArrayAdapter<CharSequence> adsaludo = ArrayAdapter.createFromResource(this,R.array.LLamada,android.R.layout.simple_spinner_item);
+
+
+
+
+                spinhola = (Spinner)findViewById(R.id.spinhola);
+                adsaludo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+                spinhola.setAdapter(adsaludo);
 
 
             }

@@ -89,7 +89,12 @@
                 android:id="@+id/comadios"
                 android:checked="false" />
         </RadioGroup>
+<Spinner
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinhola">
 
+    </Spinner>
 
 <CheckBox
     android:text="@string/showTime"

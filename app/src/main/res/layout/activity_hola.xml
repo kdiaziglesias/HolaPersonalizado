@@ -60,6 +60,37 @@
                 android:id="@+id/saludoSra"
                 android:checked="false" />
         </RadioGroup>
+
+
+        <RadioGroup
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:orientation="horizontal"
+            android:id="@+id/Grupo2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comentario:"
+                android:id="@+id/coment" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hola"
+                android:id="@+id/comhola"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adios"
+                android:id="@+id/comadios"
+                android:checked="false" />
+        </RadioGroup>
+
+
 <CheckBox
     android:text="@string/showTime"
     android:id="@+id/checkbox"

@@ -87,6 +87,7 @@ public class Hola extends Activity {
 
 
                 }
+
                 //Referencia al RadioButton
                 RadioGroup radio = (RadioGroup)findViewById(R.id.Grupo1);
                 if(R.id.saludoSr ==radio.getCheckedRadioButtonId()){
@@ -111,9 +112,35 @@ public class Hola extends Activity {
                 intento.putExtras(recipiente);
                 intento.putExtra("id1",persona1);*/
 
+                RadioGroup radio2 = (RadioGroup)findViewById(R.id.Grupo2);
+                if(R.id.comhola == radio2.getCheckedRadioButtonId()){
+                    //Esto es para que salga El Saludo Hola
+                    salutation = "Hola".toLowerCase();
+
+                }
+                else{
+
+                    salutation = "Adios".toLowerCase();
+
+                }
+
+                salutation = salutation + " Sr/Sra " +enterName+" "+Fecha;
+                out.setText(salutation);
+
+                Intent intent = new Intent(Hola.this,Salutation.class);
+                intent.putExtra("salutation",salutation);
+                startActivityForResult(intent,1);
+
 
             }
+
+
+
+
         });
+
+
+
 
 
     }
